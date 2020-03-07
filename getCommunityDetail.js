@@ -49,8 +49,8 @@ const { Community } = require('./entities');
       if (script.indexOf('window.GLOBAL_INFOS') !== -1) {
         eval(script.replace('window.GLOBAL_INFOS', 'info'));
         const [lng, lat] = info.resblockPosition.split(',');
-        data.lng = lng;
-        data.lat = lat;
+        data.lng = parseFloat(lng);
+        data.lat = parseFloat(lat);
       }
     })
     const updatedData = await Community.update(data, { where: { id: community.id } });

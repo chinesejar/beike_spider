@@ -23,11 +23,11 @@ module.exports = (sequelize, DataTypes) =>
       allowNull: false
     },
     lng: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.DOUBLE,
       allowNull: true
     },
     lat: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.DOUBLE,
       allowNull: true
     },
     building_type: {
