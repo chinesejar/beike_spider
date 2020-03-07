@@ -39,7 +39,7 @@ getCommunity = async (city, bizCircle, page = 1) => {
   $('ul.listContent').find('li').each(function () {
     const a = $(this).find('a');
     communities.push({
-      href: a.attr('href'), img: a.find('img').attr('src'), name: a.attr('title'),
+      href: a.attr('href'), img: a.find('img').attr('data-original'), name: a.attr('title'),
       code: $(this).attr('data-id'), biz_circle: bizCircle.id
     });
   });
