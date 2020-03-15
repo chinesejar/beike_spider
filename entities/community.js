@@ -53,17 +53,7 @@ module.exports = (sequelize, DataTypes) =>
     house_count: {
       type: DataTypes.INTEGER,
       allowNull: true
-    },
-    biz_circle: {
-      type: DataTypes.INTEGER,
-      allowNull: false
     }
   }, {
-    charset: 'utf8',
-    indexes: [
-      {
-        unique: true,
-        fields: ['name', 'biz_circle']
-      }
-    ]
+    charset: 'utf8'
   })

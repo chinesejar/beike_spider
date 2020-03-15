@@ -7,20 +7,18 @@ module.exports = (sequelize, DataTypes) =>
       autoIncrement: true,
     },
     abbr: {
-      type: DataTypes.STRING(1),
+      type: DataTypes.STRING(100),
       allowNull: false,
     },
-    city: {
-      type: DataTypes.STRING,
+    name: {
+      type: DataTypes.STRING(20),
       allowNull: false,
       unique: true
     },
     href: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(100),
       allowNull: false,
-    },
-    province: {
-      type: DataTypes.STRING,
-      allowNull: false
     }
+  }, {
+    charset: 'utf8'
   })

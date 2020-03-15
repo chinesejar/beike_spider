@@ -7,23 +7,13 @@ module.exports = (sequelize, DataTypes) =>
       autoIncrement: true,
     },
     name: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(50),
       allowNull: false,
     },
     href: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    district: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING(100),
       allowNull: false
     }
   }, {
-    charset: 'utf8',
-    indexes: [
-      {
-        unique: true,
-        fields: ['name', 'district']
-      }
-    ]
+    charset: 'utf8'
   })
