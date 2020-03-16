@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2015", "ES2016"
+    ],
+    "target": "ES2016",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "./build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true
+  }
+}
